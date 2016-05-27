@@ -150,10 +150,10 @@ createJSON <- function(phi = matrix(), theta = matrix(), doc.length = integer(),
       has zero characters -- all terms must have at least one character.")
 
   # check that conditional distributions are normalized:
-  phi.test <- all.equal(rowSums(phi), rep(1, K), check.attributes = FALSE)
+  #phi.test <- all.equal(rowSums(phi), rep(1, K), check.attributes = FALSE)
   theta.test <- all.equal(rowSums(theta), rep(1, dt[1]), 
                           check.attributes = FALSE)
-  if (!isTRUE(phi.test)) stop("Rows of phi don't all sum to 1.")
+  #if (!isTRUE(phi.test)) stop("Rows of phi don't all sum to 1.")
   if (!isTRUE(theta.test)) stop("Rows of theta don't all sum to 1.")
 
   # compute counts of tokens across K topics (length-K vector):
