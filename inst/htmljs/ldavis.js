@@ -46,7 +46,7 @@ LDAvis = function(to_select, json_file) {
     mdsheight = 530,
     barwidth = 530,
     barheight = 530,
-    termwidth = 90, // width to add between two panels to display terms
+    termwidth = 590, // width to add between two panels to display terms
     mdsarea = mdsheight * mdswidth;
     // controls how big the maximum circle can be
     // doesn't depend on data, only on mds width and height:
@@ -584,7 +584,7 @@ LDAvis = function(to_select, json_file) {
             // create container div for topic and lambda input:
 	    var inputDiv = document.createElement("div");
 	    inputDiv.setAttribute("id", "top");
-	    inputDiv.setAttribute("style", "width: 1210px"); // to match the width of the main svg element
+	    inputDiv.setAttribute("style", "width: 1710px"); // to match the width of the main svg element
 	    document.getElementById(visID).appendChild(inputDiv);
 
 	    // topic input container:
